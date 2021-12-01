@@ -15,9 +15,7 @@ export function TaskList() {
   const [newTaskTitle, setNewTaskTitle] = useState('')
 
   function handleCreateNewTask() {
-    if (newTaskTitle === '') {
-      return alert('Insira um título para o To.do')
-    }
+    if (newTaskTitle === '') return
 
     const newTasks = {
       id: Math.floor(Math.random() * (100 - 1) + 1),
